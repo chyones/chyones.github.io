@@ -48,3 +48,22 @@ a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid #176cb7;o
 .card-feature-list li{background:#edf5fb;border-radius:5px;color:#285c83;padding:5px 9px;font-size:11px;font-weight:700}
 .card-more{display:inline-block;margin-top:17px;font-weight:800;font-size:12px;color:var(--blue)}
 @media(max-width:700px){.capability-grid{grid-template-columns:1fr}.deep-dive-band{grid-template-columns:1fr;gap:22px}.deep-proof{border-left:0;border-top:1px solid #cadce9;padding:17px 0 0}.capability-card{min-height:0}.feature-showcase{margin-top:43px}}
+
+
+/* Source-grounded engineering content */
+.technical-section{margin:64px 0 0;padding:43px 0 12px;border-top:1px solid var(--stroke)}
+.technical-section>.section-kicker{display:inline-block;margin-bottom:12px}
+.technical-section h2{font-size:clamp(29px,3.2vw,41px);line-height:1.16;letter-spacing:-.048em;margin:0 0 25px}
+.technical-section h3{font-size:17px;line-height:1.3;margin:28px 0 10px;letter-spacing:-.02em}
+.technical-section>p{color:#536b80;font-size:14px;line-height:1.8;margin:5px 0 0;max-width:900px}
+.technical-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.technical-flow>div{padding:22px 19px;background:#f5f9fc;border:1px solid #d9e5ee;border-radius:10px;min-width:0;position:relative}
+.technical-flow>div:not(:last-child)::after{content:"→";position:absolute;right:-13px;top:19px;color:#376d9a;font-size:16px;z-index:2;font-weight:800}
+.technical-flow strong{display:block;font-size:13px;letter-spacing:-.015em;color:#173d61}
+.technical-flow p{font-size:12px;line-height:1.7;color:#596f81;margin:10px 0 0}
+.technical-section>h3+p{background:#fff;border-left:3px solid #9bbdd7;padding:5px 0 5px 16px}
+.technical-section .technical-basis{margin-top:23px;font-size:12px;color:#73879a}
+.technical-stack{font-weight:650;color:#24577f!important}
+.technical-jump{display:inline-block;margin-top:14px;font-size:13px;color:#236ea5;font-weight:800;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:950px){.technical-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.technical-flow>div::after{display:none}}
+@media(max-width:600px){.technical-section{margin-top:42px;padding-top:32px}.technical-flow{grid-template-columns:1fr}.technical-flow>div{padding:18px 19px}.technical-section h3{margin-top:24px}}
